@@ -14,9 +14,14 @@ Review the code **as submitted in the original examination**. Do not change the 
 
 ### Task 1 — /40
 
-**My mark:**  32/40, 4 of the 5 requirements present, last requirement is partially there and functions.
+**My mark:**  33/40, 4 of the 5 requirements present, last requirement is partially there and functions.
 
 **Evidence from the original code (files, methods, working or missing requirements):**  
+Booking entity is fully coded as requested as far as I can tell. This contains a RoomID with validation, contains a status value that is set to ACTIVE in the service layer, validation all works and enforces the requirements. However the DTO requirement is not met, only the response DTO is present, fully functioning but missing the request DTO.
+
+33/40 was reached by giving myself 95 for the 4 complete requirements and 40 for the incomplete requirements, summed together then divided by 5 to get the average and multiplying 40 by that
+
+33 = 40 * ((Sum of individ percentages / n of individual) / 100)
 
 
 ### Task 2 — /40
