@@ -1,9 +1,12 @@
 # CICD-1 Coding Test — Review, Improve and Reflect
 
 **Student ID:**  G00470372
+
 **Examination group:** A (Room Booking / JPQL) or B (OpenFeign):  B
-**Original examination pull-request URL (`exam-work`):**  https://github.com/Paul-Daly366/CICD1-BookingService-PD/pull/1
-**New review repository URL:**  
+
+**Original examination pull-request URL (`exam-work`):**  [Exam Repo](https://github.com/Paul-Daly366/CICD1-BookingService-PD/pull/1)
+
+**New review repository URL:**  [Review Repo](https://github.com/Paul-Daly366/CICD1_Lab_Exam_Review_G00470372)
 
 ## 1. My original examination self-assessment
 
