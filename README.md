@@ -13,8 +13,11 @@
 Review the code **as submitted in the original examination**. Do not change the original repository, branch or pull request. Check your own Group A or Group B examination paper and award marks only for evidence present in the original submission.
 
 ### Task 1 — /40
-**My mark:**  
+
+**My mark:**  32/40, 4 of the 5 requirements present, last requirement is partially there and functions.
+
 **Evidence from the original code (files, methods, working or missing requirements):**  
+
 
 ### Task 2 — /40
 **My mark:**  
