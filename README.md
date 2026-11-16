@@ -22,6 +22,8 @@ Booking entity is fully coded as requested as far as I can tell. This contains a
 
 33/40 was reached by figuring out the percentages of each requirement and getting an average, and comparing with an initial deduced mark:
 
+Deduced Mark = 32/40, most requirements present and working as intended, but half of one of the requirements missing
+
 95% for Booking Entity, RoomID, ACTIVE status, field validation
 
 40% for Request/Response DTOs
@@ -32,8 +34,22 @@ Average = Sum of individual percentages / n of individual = 88%
 
 
 ### Task 2 — /40
+
 **My mark:**  
+
 **Evidence from the original code:**  
+
+Deduced Mark = 20 / 40, A lot of code present that works and/or is correct, but OpenFeign is not finished and non functionalso remote room lookup requirement isn't met, as well as checking capacity when posting booking
+
+95% for Persistence
+
+85% for POST Booking, missing OpenFeign functionality
+
+40% for Invalid input & capacity failures, contains input validation that works, but can't compare with the other microservice for capacity checking
+
+30% for Remote Room Lookup using Feign, OpenFeign is MISSING FILES, MAYBE 0 HERE, TRIPLE CHECK
+
+
 
 ### Task 3 — /20
 **My mark:**  
