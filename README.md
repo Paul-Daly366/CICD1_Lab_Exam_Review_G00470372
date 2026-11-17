@@ -69,7 +69,7 @@ Average = 95%
 
 19 = 20 * ( Average / 100 )
 
-###Total self-assessed original examination mark: /100
+### Total self-assessed original examination mark: /100
 
 Mathematically: 19 + 22.5 + 33 =  74 / 100
 
