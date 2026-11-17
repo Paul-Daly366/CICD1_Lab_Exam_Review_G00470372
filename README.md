@@ -13,13 +13,9 @@
 
 ### Task 1 — /40
 
-**My mark:**  33/40, 4 of the 5 requirements present, last requirement is partially there and functions.
+**My mark: 33/40**  
 
-**Evidence from the original code (files, methods, working or missing requirements):**  
-Booking entity is fully coded as requested as far as I can tell. This contains a RoomID with validation, contains a status value that is set to ACTIVE in the service layer, validation all works and enforces the requirements. However the DTO requirement is not met, only the response DTO is present, fully functioning but missing the request DTO.
-
-
-33/40 was reached by figuring out the percentages of each requirement and getting an average, and comparing with an initial deduced mark:
+33/40 was reached by figuring out the percentages of each requirement and getting an average, and comparing with an initial deduced mark
 
 Deduced Mark = 32/40, most requirements present and working as intended, but half of one of the requirements missing
 
@@ -27,17 +23,18 @@ Deduced Mark = 32/40, most requirements present and working as intended, but hal
 
 40% for Request/Response DTOs
 
-
 Average = Sum of individual percentages / n of individual = 88%
 
 33 = 40 * ( Average / 100 )
 
+**Evidence from the original code (files, methods, working or missing requirements):**  
+
+Booking entity is fully coded as requested as far as I can tell. This contains a RoomID with validation, contains a status value that is set to ACTIVE in the service layer, validation all works and enforces the requirements. However the DTO requirement is not met, only the response DTO is present, fully functioning but missing the request DTO.
+
 
 ### Task 2 — /40
 
-**My mark:**  
-
-**Evidence from the original code:**  
+**My mark: 20/40**  
 
 Deduced Mark = 20 / 40, A lot of code present that works and/or is correct, but OpenFeign is not finished and non function, also remote room lookup requirement isn't met, as well as checking capacity when posting booking.
 
@@ -49,17 +46,18 @@ Deduced Mark = 20 / 40, A lot of code present that works and/or is correct, but 
 
 10% for Remote Room Lookup using Feign, originally had most of the client class coded, but somehow didn't add when committing, so missing from the pull request, therefore no files present for OpenFeign integration, only a DTO for room request is coded.
 
-
 Average = Sum of individual percentages / n of individual = 56.25%
 
 22.5 = 40 * ( Average / 100)
 
+**Evidence from the original code:**  
+
+
+
 
 ### Task 3 — /20
 
-**My mark: 19 / 20 **  
-
-**Evidence from the original code:**  
+**My mark: 19/20**
 
 Deduced mark: 18 / 20, all requirements met and fully functional, Get method from database works as intended, response DTO returns instead of the original class, appropriate 404 error when the input booking id is not found. 
 
@@ -69,9 +67,13 @@ Average = 95%
 
 19 = 20 * ( Average / 100 )
 
+**Evidence from the original code:**  
+
+
+
 ### Total self-assessed original examination mark: /100
 
-Mathematically: 19 + 22.5 + 33 =  74 / 100
+Mathematically: 19 + 20 + 33 =  72 / 100
 
 Deduced: ~ 60 / 100
 
