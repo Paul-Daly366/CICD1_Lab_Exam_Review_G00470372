@@ -69,14 +69,14 @@ Average = 95%
 
 19 = 20 * ( Average / 100 )
 
-**Total self-assessed original examination mark: /100**
+###Total self-assessed original examination mark: /100
 
 Mathematically: 19 + 22.5 + 33 =  74 / 100
 
 Deduced: ~ 60 / 100
 Going closer to 60 as the maths may be more weighted than should be
 
-** Final self-assessed mark: 65 / 100 **
+**Final self-assessed mark: 65 / 100**
 
 **Checkpoint:** Commit this completed self-assessment as the **first review commit in your new repository**, before you modify or add application code. The lecturer decides the official original examination mark.
 
