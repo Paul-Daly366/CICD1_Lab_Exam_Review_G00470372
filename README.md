@@ -13,7 +13,7 @@
 
 ### Task 1 — /40
 
-**My mark: 33/40**  
+**My mark: 32/40**  
 
 33/40 was reached by figuring out the percentages of each requirement and getting an average, and comparing with an initial deduced mark
 
@@ -73,7 +73,7 @@ Average = 95%
 
 ### Total self-assessed original examination mark: /100
 
-Mathematically: 19 + 20 + 33 =  72 / 100
+Mathematically: 19 + 20 + 32 =  71 / 100
 
 Deduced: ~ 60 / 100
 
