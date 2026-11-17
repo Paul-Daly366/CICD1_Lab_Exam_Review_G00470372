@@ -10,7 +10,6 @@
 
 ## 1. My original examination self-assessment
 
-Review the code **as submitted in the original examination**. Do not change the original repository, branch or pull request. Check your own Group A or Group B examination paper and award marks only for evidence present in the original submission.
 
 ### Task 1 — /40
 
