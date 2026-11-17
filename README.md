@@ -39,7 +39,7 @@ BookingResponse present and functioning, however the DTO requirement is not full
 
 **My mark: 20/40**  
 
-Deduced Mark = 20 / 40, A lot of code present that works and/or is correct, but OpenFeign is not finished and non function, also remote room lookup requirement isn't met, as well as checking capacity when posting booking.
+Deduced Mark = 20 / 40, A lot of code present that works and/or is correct, but OpenFeign is not present which means the remote room lookup requirement isn't met, as well as checking capacity when posting booking.
 
 95% for Persistence, fully functional as far as I can tell.
 
@@ -54,6 +54,8 @@ Average = Sum of individual percentages / n of individual = 56.25%
 22.5 = 40 * ( Average / 100)
 
 **Evidence from the original code:**  
+
+POST method 'creatingBooking()' present and functional, but missing OpenFeign integration.
 
 BookingRepository is present and fully functioning, is instantiated in the service layer and used in the 'createBooking()' and 'getBookingById()' methods.
 
@@ -77,7 +79,7 @@ Average = 95%
 
 **Evidence from the original code:**  
 
-GET method coded in service and controller layer (both 'getBookingById()'), grabbing from the persistence layer, fully functioning and throws a 404 error when a booking is not found. Booking is returned as a DTO in both methods.
+GET method coded in service and controller layer (both 'getBookingById()'), grabbing from the persistence layer, fully functioning and throws a 404 error when a booking is not found. Booking is returned as a DTO in both layers.
 
 ### Total self-assessed original examination mark: /100
 
