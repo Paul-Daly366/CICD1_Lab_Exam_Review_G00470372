@@ -74,6 +74,7 @@ Average = 95%
 Mathematically: 19 + 22.5 + 33 =  74 / 100
 
 Deduced: ~ 60 / 100
+
 Going closer to 60 as the maths may be more weighted than should be
 
 **Final self-assessed mark: 65 / 100**
