@@ -91,9 +91,6 @@ Going closer to 60 as the maths may weigh certain requirements more than they sh
 
 **Final self-assessed mark: 65 / 100**
 
-**Checkpoint:** Commit this completed self-assessment as the **first review commit in your new repository**, before you modify or add application code. The lecturer decides the official original examination mark.
-
-
 ## 2. Corrections and improvements in my new project
 
 Start from a **fresh copy of the starter template for your own exam group**, in a **new GitHub repository**. You may consult or selectively reuse your own original examination code, but the new project must demonstrate that you understand and can correct it. Do not change your original examination submission.
