@@ -29,7 +29,7 @@ Average = Sum of individual percentages / n of individual = 88%
 
 **Evidence from the original code (files, methods, working or missing requirements):**  
 
-Booking entity is fully coded as requested as far as I can tell. This contains a RoomID with validation, contains a status value that is set to ACTIVE in the service layer, validation all works and enforces the requirements. However the DTO requirement is not met, only the response DTO is present, fully functioning but missing the request DTO.
+Booking Entity class, contains required attributes, set up as an entity for persistence, has requested Validation indentation. Includes RoomID which is required to create an object of this class. Includes status which is set to Active on creating the object in the service layer. Validation all works and enforces the requirements. However the DTO requirement is not met, only the response DTO is present, fully functioning but missing the request DTO.
 
 
 ### Task 2 — /40
