@@ -29,7 +29,11 @@ Average = Sum of individual percentages / n of individual = 88%
 
 **Evidence from the original code (files, methods, working or missing requirements):**  
 
-Booking Entity class present, contains required attributes, set up as an entity for persistence, has requested Validation indentation. Includes RoomID which is required to create an object of this class. Includes status which is set to Active on creating the object in the service layer. Validation all works and enforces the requirements. However the DTO requirement is not met, only the response DTO is present, fully functioning but missing the request DTO.
+Booking Entity class present, contains required attributes, set up as an entity for persistence, and has the requested Validation indentation, all working and enforcing the requirements. Includes RoomID which is required to create an object of this class. Includes status which is set to Active on creating the object in the service layer. 
+
+BookingService present and handles the logic when using Booking & BookingResponse objects.
+
+BookingResponse present and functioning, however the DTO requirement is not fully met, as the project is missing the request DTO.
 
 ### Task 2 — /40
 
@@ -51,8 +55,13 @@ Average = Sum of individual percentages / n of individual = 56.25%
 
 **Evidence from the original code:**  
 
+BookingRepository is present and fully functioning, is instantiated in the service layer and used in the 'createBooking()' and 'getBookingById()' methods.
 
+BookingController is present, contains a POST method, 'createBooking()', which works as intended but does not utilize OpenFeign when creating Bookings.
 
+Invalid Input is handled by Validation, but does not account for checking invalid capacity entries, this would have been handled with an OpenFeign interaction, but is missing in this project.
+
+No OpenFeign classes or integration present, only a RoomRequest DTO, which would be more appropriately placed in the directory '../sample/client/dto/'.
 
 ### Task 3 — /20
 
@@ -60,7 +69,7 @@ Average = Sum of individual percentages / n of individual = 56.25%
 
 Deduced mark: 18 / 20, all requirements met and fully functional, Get method from database works as intended, response DTO returns instead of the original class, appropriate 404 error when the input booking id is not found. 
 
-95% for the 3 requirements
+95% for the 3 requirements (GET method retrieving from database, response DTO & appropriate booking not found response).
 
 Average = 95%
 
@@ -68,7 +77,7 @@ Average = 95%
 
 **Evidence from the original code:**  
 
-
+GET method coded in service and controller layer (both 'getBookingById()'), grabbing from the persistence layer, fully functioning and throws a 404 error when a booking is not found. Booking is returned as a DTO in both methods.
 
 ### Total self-assessed original examination mark: /100
 
