@@ -43,11 +43,11 @@ Deduced Mark = 20 / 40, A lot of code present that works and/or is correct, but 
 
 95% for Persistence
 
-85% for POST Booking, missing OpenFeign functionality
+85% for POST Booking, works as intended but missing OpenFeign functionality.
 
-40% for Invalid input & capacity failures, contains input validation that works, but can't compare with the other microservice for capacity checking
+40% for Invalid input & capacity failures, contains input validation that works, but can't compare with the other microservice for capacity checking.
 
-30% for Remote Room Lookup using Feign, OpenFeign is MISSING FILES, MAYBE 0 HERE, TRIPLE CHECK
+10% for Remote Room Lookup using Feign, originally had most of the client class coded, but somehow didn't add when committing, so missing from the pull request, therefore no files present for OpenFeign integration, only a DTO for room request is coded.
 
 
 
