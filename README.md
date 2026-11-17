@@ -15,7 +15,7 @@
 
 **My mark: 32/40**  
 
-33/40 was reached by figuring out the percentages of each requirement and getting an average, and comparing with an initial deduced mark
+32/40 was reached by figuring out the percentages of each requirement and getting an average, and comparing with an initial deduced mark
 
 Deduced Mark = 32/40, most requirements present and working as intended, but half of one of the requirements missing
 
