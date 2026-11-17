@@ -57,12 +57,30 @@ Average = Sum of individual percentages / n of individual = 56.25%
 
 
 ### Task 3 — /20
-**My mark:**  
+
+**My mark: 19 / 20 **  
+
 **Evidence from the original code:**  
+
+Deduced mark: 18 / 20, all requirements met and fully functional, Get method from database works as intended, response DTO returns instead of the original class, appropriate 404 error when the input booking id is not found. 
+
+95% for the 3 requirements
+
+Average = 95%
+
+19 = 20 * ( Average / 100 )
 
 **Total self-assessed original examination mark: /100**
 
+Mathematically: 19 + 22.5 + 33 =  74 / 100
+
+Deduced: ~ 60 / 100
+Going closer to 60 as the maths may be more weighted than should be
+
+** Final self-assessed mark: 65 / 100 **
+
 **Checkpoint:** Commit this completed self-assessment as the **first review commit in your new repository**, before you modify or add application code. The lecturer decides the official original examination mark.
+
 
 ## 2. Corrections and improvements in my new project
 
