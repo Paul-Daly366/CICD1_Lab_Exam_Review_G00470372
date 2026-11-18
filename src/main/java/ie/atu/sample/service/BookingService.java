@@ -1,5 +1,7 @@
 package ie.atu.sample.service;
 
+import ie.atu.sample.client.RoomClient;
+import ie.atu.sample.client.dto.RoomRequest;
 import ie.atu.sample.dto.BookingRequest;
 import ie.atu.sample.dto.BookingResponse;
 import ie.atu.sample.model.Booking;
@@ -11,9 +13,11 @@ import org.springframework.web.server.ResponseStatusException;
 @Service
 public class BookingService {
     private final BookingRepository repo;
+    private final RoomClient roomClient;
 
-    public BookingService(BookingRepository repo) {
+    public BookingService(BookingRepository repo, RoomClient roomClient) {
         this.repo = repo;
+        this.roomClient = roomClient;
     }
 
     // NEED TO CHECK ATTENDEE & ROOM ID WITH OPENFEIGN
@@ -44,5 +48,14 @@ public class BookingService {
         bookingResponse.setRoomId(booking.getRoomId());
         bookingResponse.setRoomStatus("Active");
         return bookingResponse;
+    }
+
+    public BookingRequest testFeignConnect(Long roomId){
+        RoomRequest roomReq = roomClient.getRoomById(roomId);
+        BookingRequest bookingReq = new BookingRequest();
+        bookingReq.setRoomId(roomId);
+        bookingReq.setAttendeeCount(roomReq.getCapacity());
+        bookingReq.setOrganiserName("Empty");
+        return bookingReq;
     }
 }
