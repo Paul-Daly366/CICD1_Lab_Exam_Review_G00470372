@@ -142,7 +142,7 @@ Use Swagger UI or another HTTP client. For **at least four meaningful checks**, 
 
 **What did I understand during the examination but struggle to implement?**  
 
-OpenFeign integration, I had notes prepared for implementing all classes of a SpringWeb project, but had left out OpenFeign integration. 
+OpenFeign integration, I had notes prepared for implementing all classes of a SpringWeb project, but had left out OpenFeign integration. As a result, I was attempting to relearn during the exam.
 
 It was difficult to get the exact syntax & structure needed, and I didn't fully understand how to retrieve attributes from the returned JSON. I understand now that it moves them to a request DTO which is then accessed in the service layer.
 
