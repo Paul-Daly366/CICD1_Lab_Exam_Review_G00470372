@@ -22,6 +22,7 @@ public class BookingController {
     }
 
     @GetMapping("/{id}")
+    @ResponseStatus(HttpStatus.OK)
     public BookingResponse getBookingById(@PathVariable Long id){
         return bookingService.getBookingById(id);
     }
