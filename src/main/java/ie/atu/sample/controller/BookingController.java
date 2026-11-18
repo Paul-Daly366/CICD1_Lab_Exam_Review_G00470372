@@ -1,5 +1,6 @@
 package ie.atu.sample.controller;
 
+import ie.atu.sample.dto.BookingRequest;
 import ie.atu.sample.dto.BookingResponse;
 import ie.atu.sample.model.Booking;
 import ie.atu.sample.service.BookingService;
@@ -17,8 +18,8 @@ public class BookingController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public BookingResponse createBooking(Booking booking){
-        return bookingService.createBooking(booking);
+    public BookingResponse createBooking(BookingRequest bookingReq){
+        return bookingService.createBooking(bookingReq);
     }
 
     @GetMapping("/{id}")

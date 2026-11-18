@@ -1,5 +1,6 @@
 package ie.atu.sample.service;
 
+import ie.atu.sample.dto.BookingRequest;
 import ie.atu.sample.dto.BookingResponse;
 import ie.atu.sample.model.Booking;
 import ie.atu.sample.repository.BookingRepository;
@@ -15,9 +16,15 @@ public class BookingService {
         this.repo = repo;
     }
 
-    public BookingResponse createBooking(Booking booking){
-        booking.setBookingId(null);
+    // NEED TO CHECK ATTENDEE & ROOM ID WITH OPENFEIGN
+    // CHECK IF ROOM ALREADY ACTIVE?
+    public BookingResponse createBooking(BookingRequest bookingReq){
+        Booking booking = new Booking();
         booking.setRoomStatus("ACTIVE");
+        booking.setBookingId(null);
+        booking.setOrganiserName(bookingReq.getOrganiserName());
+        booking.setAttendeeCount(bookingReq.getAttendeeCount());
+        booking.setRoomId(bookingReq.getRoomId());
         repo.save(booking);
         BookingResponse bookingResponse = new BookingResponse();
         bookingResponse.setBookingId(booking.getBookingId());
