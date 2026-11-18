@@ -99,7 +99,11 @@ Describe **two or three important problems** in your original code. For each, ex
 
 **Problem and correction 1:**  
 
+OpenFeign integration, mostly absent from my exam code, I added a RoomClient and coded it with the necessary info about the 'Room Service' application. I then integrated this class into the service layer, using it to test if the roomId is correct and if the attendeee count isn't too high. When the endpoint in the controller is called, it calls the service layer, which uses a RoomClient method, which calls the suitable 'Room Service' endpoint, returning data in the form of a RoomRequest, which is then used for the logic comparision in BookingService.
+
 **Problem and correction 2:**  
+
+Booking Request DTO, wasn't present in the exam code, simply a structure for the user to fill when creating a booking. It is used by the service layer to construct the Booking object which is then saved to the database. It also removes unneeded fields for the user to fill, which is a nice bonus.
 
 **Problem and correction 3 (optional):**  
 
@@ -131,7 +135,6 @@ Use Swagger UI or another HTTP client. For **at least four meaningful checks**, 
 - Actual HTTP status / body:  200, retrieved from database and using OpenFeign
 - Pass / fail:  Pass
 
-**Group A:** Demonstrate `GET /api/bookings/search?roomName=...` using an exact room name, bookings ordered by attendee count descending, and an empty list for no matches. Add checks if necessary to show all three behaviours.
 
 **Group B:** Run the **provided** Room Service separately on port 8082 and the **new** Booking Service on port 8081. Demonstrate that booking creation obtains room details through OpenFeign and that booking retrieval uses the local Booking database. Do not modify the Room Service.
 
@@ -139,9 +142,19 @@ Use Swagger UI or another HTTP client. For **at least four meaningful checks**, 
 
 **What did I understand during the examination but struggle to implement?**  
 
+OpenFeign integration, I had notes prepared for implementing all classes of a SpringWeb project, but had left out OpenFeign integration. 
+
+It was difficult to get the exact syntax & structure needed, and I didn't fully understand how to retrieve attributes from the returned JSON. I understand now that it moves them to a request DTO which is then accessed in the service layer.
+
+I also did not know how to implement a request DTO for creating an object without using OpenFeign, it was a lot simpler than I thought, and makes the POST method a lot simpler to read and fill in.
+
 **Which Spring Boot, JPA, validation, JPQL or OpenFeign concept became clearer after correcting my code? Give a specific example.**  
 
+OpenFeign, how it works with the different layers and how it retrieves data. For example, RoomClient has a method which retrieves a JSON containing the data from a Room object, and specific attributes chosen by myself are saved to a RoomRequest object.
+
 **What will I do differently in my next coding test or API development task?**  
+
+I will try to  go over everything in the test and not assume I know how to code it off by heart. I will also do more projects myself to get a handle of coding to make the tests go smoother and faster.
 
 ## Review lab assessment — 20 marks
 
