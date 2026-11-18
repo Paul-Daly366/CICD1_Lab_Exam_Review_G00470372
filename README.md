@@ -108,28 +108,28 @@ Describe **two or three important problems** in your original code. For each, ex
 Use Swagger UI or another HTTP client. For **at least four meaningful checks**, record the request/input, expected result, actual HTTP status/response, and pass/fail. Include unsuccessful cases; a running application alone is not enough.
 
 **Test 1 — successful booking request:**  
-- Request / input:  
-- Expected:  
-- Actual HTTP status / body:  
-- Pass / fail:  
+- Request / input: POST /api/bookings {"organiserName": "Paul","attendeeCount": 20,"roomId": 1}
+- Expected:  201 | "Booking Successful."
+- Actual HTTP status / body:  201 | "Booking Successful."
+- Pass / fail:  Pass
 
 **Test 2 — invalid input or excessive attendee count:**  
-- Request / input:  
-- Expected:  
-- Actual HTTP status / body:  
-- Pass / fail:  
+- Request / input: POST /api/bookings {"organiserName": "Paul","attendeeCount": 62,"roomId": 3}
+- Expected:  201 | "Booking unsuccessful, attendees exceed capacity."
+- Actual HTTP status / body:  201 | "Booking unsuccessful, attendees exceed capacity."
+- Pass / fail:  Pass
 
 **Test 3 — missing booking or room:**  
-- Request / input:  
-- Expected:  
-- Actual HTTP status / body:  
-- Pass / fail:  
+- Request / input: POST /api/bookings {"organiserName": "Paul","attendeeCount": 62}
+- Expected:  201 | "Booking unsuccessful, roomId required."
+- Actual HTTP status / body:  201 | "Booking unsuccessful, roomId required."
+- Pass / fail:  Pass
 
 **Test 4 — requirement specific to my group:**  
-- Request / input:  
-- Expected:  
-- Actual HTTP status / body:  
-- Pass / fail:  
+- Request / input:  GET /api/bookings/{id} 2
+- Expected:  200, retrieve from database and not using OpenFeign
+- Actual HTTP status / body:  200, retrieved from database and using OpenFeign
+- Pass / fail:  Pass
 
 **Group A:** Demonstrate `GET /api/bookings/search?roomName=...` using an exact room name, bookings ordered by attendee count descending, and an empty list for no matches. Add checks if necessary to show all three behaviours.
 
