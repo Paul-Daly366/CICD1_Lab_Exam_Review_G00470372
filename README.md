@@ -43,7 +43,7 @@ Deduced Mark = 20 / 40, A lot of code present that works and/or is correct, but 
 
 95% for Persistence, fully functional as far as I can tell.
 
-80% for POST Booking, works as intended but missing OpenFeign functionality.
+80% for POST Booking, works as intended but missing OpenFeign functionality & specified POST body structure.
 
 40% for Invalid input & capacity failures, contains input validation that works, but can't compare with the other microservice for capacity checking.
 
