@@ -1,14 +1,10 @@
 package ie.atu.sample.controller;
 
-import ie.atu.sample.client.dto.RoomRequest;
 import ie.atu.sample.dto.BookingRequest;
 import ie.atu.sample.dto.BookingResponse;
-import ie.atu.sample.model.Booking;
 import ie.atu.sample.service.BookingService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-
-import java.awt.print.Book;
 
 @RestController
 @RequestMapping("/api/bookings")
@@ -21,7 +17,7 @@ public class BookingController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public BookingResponse createBooking(BookingRequest bookingReq){
+    public String createBooking(BookingRequest bookingReq){
         return bookingService.createBooking(bookingReq);
     }
 
@@ -29,10 +25,4 @@ public class BookingController {
     public BookingResponse getBookingById(@PathVariable Long id){
         return bookingService.getBookingById(id);
     }
-
-    @GetMapping("/room/{id}")
-    public BookingRequest getRoomById(@PathVariable Long id){
-        return bookingService.testFeignConnect(id);
-    }
-
 }

@@ -20,23 +20,27 @@ public class BookingService {
         this.roomClient = roomClient;
     }
 
-    // NEED TO CHECK ATTENDEE & ROOM ID WITH OPENFEIGN
-    // CHECK IF ROOM ALREADY ACTIVE?
-    public BookingResponse createBooking(BookingRequest bookingReq){
-        Booking booking = new Booking();
-        booking.setRoomStatus("ACTIVE");
-        booking.setBookingId(null);
-        booking.setOrganiserName(bookingReq.getOrganiserName());
-        booking.setAttendeeCount(bookingReq.getAttendeeCount());
-        booking.setRoomId(bookingReq.getRoomId());
-        repo.save(booking);
-        BookingResponse bookingResponse = new BookingResponse();
-        bookingResponse.setBookingId(booking.getBookingId());
-        bookingResponse.setOrganiserName(booking.getOrganiserName());
-        bookingResponse.setAttendeeCount(booking.getAttendeeCount());
-        bookingResponse.setRoomId(booking.getRoomId());
-        bookingResponse.setRoomStatus("ACTIVE");
-        return bookingResponse;
+    public String createBooking(BookingRequest bookingReq){
+        if(bookingReq.getRoomId() == null){
+            return "Booking unsuccessful, roomId required.";
+        }
+        RoomRequest roomReq = roomClient.getRoomById(bookingReq.getRoomId());
+        if(bookingReq.getAttendeeCount() <= 0){
+            return "Booking unsuccessful, capacity required.";
+        }
+        else if(bookingReq.getAttendeeCount() <= roomReq.getCapacity()){
+            Booking booking = new Booking();
+            booking.setRoomStatus("ACTIVE");
+            booking.setBookingId(null);
+            booking.setOrganiserName(bookingReq.getOrganiserName());
+            booking.setAttendeeCount(bookingReq.getAttendeeCount());
+            booking.setRoomId(bookingReq.getRoomId());
+            repo.save(booking);
+            return "Booking Successful.";
+        }
+        else {
+            return "Booking unsuccessful, attendees exceed capacity.";
+        }
     }
 
     public BookingResponse getBookingById(Long id){
@@ -48,14 +52,5 @@ public class BookingService {
         bookingResponse.setRoomId(booking.getRoomId());
         bookingResponse.setRoomStatus("Active");
         return bookingResponse;
-    }
-
-    public BookingRequest testFeignConnect(Long roomId){
-        RoomRequest roomReq = roomClient.getRoomById(roomId);
-        BookingRequest bookingReq = new BookingRequest();
-        bookingReq.setRoomId(roomId);
-        bookingReq.setAttendeeCount(roomReq.getCapacity());
-        bookingReq.setOrganiserName("Empty");
-        return bookingReq;
     }
 }
