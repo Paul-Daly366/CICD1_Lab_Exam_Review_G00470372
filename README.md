@@ -154,7 +154,7 @@ OpenFeign, how it works with the different layers and how it retrieves data. For
 
 **What will I do differently in my next coding test or API development task?**  
 
-I will try to  go over everything covered by the test and not assume I know how to code it off by heart. I will also do more practice myself to make the tests go smoother and faster.
+I will be better prepared by doing more practice projects leading up to a coding test, checking everything that can appear on the test and learning each part. I'll prioritize studying the topics I understand the least.
 
 ## Review lab assessment — 20 marks
 
