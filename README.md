@@ -103,7 +103,7 @@ OpenFeign integration, mostly absent from my exam code, I added a RoomClient and
 
 **Problem and correction 2:**  
 
-Booking Request DTO, wasn't present in the exam code, simply a structure for the user to fill when creating a booking. It is used by the service layer to construct the Booking object which is then saved to the database. It also removes unneeded fields for the user to fill, which is a nice bonus.
+Booking Request DTO, wasn't present in the exam code, simply a structure for the user to fill when creating a booking. It is used by the service layer to construct the Booking object which is then saved to the database. It also removes unneeded fields for the user to fill, which is nice for user use.
 
 **Problem and correction 3 (optional):**  
 
